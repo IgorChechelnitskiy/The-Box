@@ -826,6 +826,9 @@ body {
           font-weight: 600;
           font-size: 18px;
           color: #fff;
+          cursor: pointer;
+          outline: none;
+          border: none;
         }
       }
     }
@@ -834,8 +837,113 @@ body {
 
 /*#endregion*/
 
-/*#region__________________________________________Form*/
+/*#region__________________________________________Contacts*/
 .main-wrapper {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    margin: 85px auto 80px;
 
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      &-item {
+        display: flex;
+        gap: 13px;
+
+        p {
+          font-size: 20px;
+          color: #292E3D;
+          margin: 0;
+
+          &:nth-child(1) {
+            min-width: 90px;
+            font-weight: 500;
+            color: var(--bg-color);
+          }
+        }
+      }
+
+      img {
+        width: 163px;
+      }
+    }
+
+    .socials {
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--bg-color);
+        margin: 0 0 20px;
+      }
+
+      input {
+        box-sizing: border-box;
+        min-width: 280px;
+        height: 40px;
+        border: 1px solid #E0E3EB;
+        border-radius: 4px;
+        outline: none;
+        padding-left: 14px;
+        margin-bottom: 40px;
+
+        &::placeholder {
+          font-size: 18px;
+          color: #A3AAC2;
+          user-select: none;
+          cursor: text;
+        }
+
+        &:focus::placeholder {
+          color: transparent;
+        }
+      }
+
+      button {
+        min-width: 136px;
+        font-weight: 600;
+        font-size: 18px;
+        color: #fff;
+        background: var(--orange-color);
+        padding: 10px 0;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .socials-icons {
+        display: flex;
+        gap: 20px;
+
+        svg:hover {
+          path {
+            fill: var(--bg-color);
+          }
+        }
+      }
+    }
+  }
 }
+
+/*#endregion*/
+
+/*#region__________________________________________Contacts*/
+.main-wrapper {
+  .footer {
+    max-width: none;
+    background: var(--bg-color);
+
+    p {
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #fff;
+      padding: 25px 0 25px;
+    }
+
+  }
+}
+
 /*#endregion*/
